@@ -134,7 +134,7 @@ def get_data_from_promt(word_data, keyword):
         'phrases': phrases,
         'other_forms': other_forms_string,
         'part_of_speech': part_of_speech_string,
-        'sounds': f'[sounds:{keyword}.mp3]',
+        'sounds': f'[sound:{keyword}.mp3]',
     })
     return word_data, keyword
 

@@ -11,7 +11,7 @@ bot = TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-    btn = types.KeyboardButton('/csv')
+    btn = typЫes.KeyboardButton('/csv')
     markup.add(btn)
     bot.send_message(message.chat.id, 'Шаг 1. – Отправляй слова для сбора данных\n'
                                       'Шаг 2. – Пиши /csv – для выгрузки в Anki', reply_markup=markup)
